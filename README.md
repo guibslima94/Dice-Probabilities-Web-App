@@ -1,6 +1,6 @@
 # Dice Probability Calculator
 
-A modern web application for calculating dice probabilities. This project was converted from a tkinter GUI to a full-stack web application with a clean, responsive interface.
+A modern web application for calculating dice probabilities. This project was designed to help boardgame players (e.g Zombicide, D&D, etc) to easy calculate dice probabilities.
 
 ## Features
 
@@ -37,7 +37,7 @@ dice-project/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git git@github.com:guibslima94/Dice-Probabilities-Web-App.git
 cd dice-project
 ```
 
@@ -62,30 +62,10 @@ The server will start on `http://localhost:5000`. Open this URL in your browser 
 3. Enter the **Number of Dices Reaching Target** (how many dice should reach or exceed the target)
 4. Click **Calculate Probability** to see the result
 
-The result will show both the decimal probability and percentage, and your last calculation will be displayed below.
+The result will show both the decimal probability and percentage, and your last calculation will be displayed below:
 
-## API Endpoint
+<img width="525" height="680" alt="image" src="https://github.com/user-attachments/assets/7d370079-07a8-4a57-9047-c7bb1ef32808" />
 
-The application exposes a REST API endpoint:
-
-**POST** `/api/calculate`
-
-Request body:
-```json
-{
-  "num_dices": 3,
-  "target_value": 4,
-  "num_dices_reaching_target": 2
-}
-```
-
-Response:
-```json
-{
-  "probability": 0.5,
-  "probability_formatted": "0.5000"
-}
-```
 
 ## License
 
