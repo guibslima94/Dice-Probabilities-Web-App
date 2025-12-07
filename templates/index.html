@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Probability App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Probability Calculator</h1>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="num_dices">Number of Dices:</label>
+                <input type="number" id="num_dices" name="num_dices" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="target_value">Target Value:</label>
+                <input type="number" id="target_value" name="target_value" min="1" max="6" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="num_dices_reaching_target">Number of Dices Reaching Target:</label>
+                <input type="number" id="num_dices_reaching_target" name="num_dices_reaching_target" min="0" required>
+            </div>
+            
+            <button id="calculate-btn" class="btn-primary">Calculate Probability</button>
+            
+            <div id="result-container" class="result-container hidden">
+                <div class="result-box">
+                    <h2>Result</h2>
+                    <p class="probability-value" id="probability-display"></p>
+                </div>
+            </div>
+            
+            <div id="last-run" class="last-run">
+                <p>Last Run: <span id="last-run-value">N/A</span></p>
+            </div>
+            
+            <div id="error-message" class="error-message hidden"></div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
+
