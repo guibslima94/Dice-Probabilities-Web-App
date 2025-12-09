@@ -62,6 +62,9 @@ The server will start on `http://localhost:5000`. Open this URL in your browser 
 3. Enter the **Number of Dices Reaching Target** (how many dice should reach or exceed the target)
 4. Click **Calculate Probability** to see the result
 
+   <img width="597" height="758" alt="image" src="https://github.com/user-attachments/assets/7a7a3654-7e8f-4152-bfbe-e7f0dbfef118" />
+
+
 The result will show both the decimal probability and percentage, and your last calculation will be displayed below:
 
 <img width="525" height="680" alt="image" src="https://github.com/user-attachments/assets/7d370079-07a8-4a57-9047-c7bb1ef32808" />
